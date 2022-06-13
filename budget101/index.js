@@ -71,7 +71,7 @@ form.addEventListener('submit', (e) => {
     chart.data.datasets[0].data[4] = monthlyPositiveCashFlow.toFixed(2)
     chart.update()
 
-    lineOne.innerHTML = "You have "+ monthlyPositiveCashFlow.toFixed(2) +" avaliable for monthly investing, saving, and spending!"
+    lineOne.innerHTML = "You have $"+ monthlyPositiveCashFlow.toFixed(2) +" avaliable for monthly investing, saving, and spending!"
 
     if(totalMonthlyExpense > 1000){
         lineTwo.innerHTML = "First, build a small emergeny fund, we recommend $"+ totalMonthlyExpense +" to cover 1 month of utlities"
