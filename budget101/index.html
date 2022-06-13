@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Budget 101</title>
+    </head>
+
+    <body>
+        
+        <div class="content">
+            <div class="Header">Budget 101</div>
+
+            <div class="SectionOne">
+                
+
+                <div class="Input">
+
+
+                    <form id="theData">
+
+                        <div class="form-group">
+                            <label for="Income">Gross Yearly Income:</label>
+                            <input type="number" class="form-control" id="YearlyIncome" aria-describedby="YearlyIncome" placeholder="$ 50000">
+ 
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Monthly Cost of Housing:</label>
+                            <input type="number" class="form-control" id="housingCost" aria-describedby="emailHelp" placeholder="$ 750">
+ 
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Total Monthly Utilities (Food, Heat, Water, Etc.):</label>
+                            <input type="number" class="form-control" id="utilitiesCost" aria-describedby="emailHelp" placeholder="$ 400">
+ 
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Monthly Earning Expense (Required To Earn Income, Eg. Transport Fee):</label>
+                            <input type="number" class="form-control" id="earningExpense" aria-describedby="emailHelp" placeholder="$ 300">
+ 
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Total Of Monthly Minimum Payments On Debts:</label>
+                            <input type="number" class="form-control" id="debtPayments" aria-describedby="emailHelp" placeholder="$ 300">
+ 
+                        </div>
+
+                        <button id="submit" type="submit" class="btn btn-light">Submit</button>
+
+                    </form>
+
+
+                </div>
+
+                <div class="Graph">
+
+                    <canvas id="myChart" width="300" height="300"></canvas>
+                    
+                </div>
+
+
+            </div>
+
+
+            <div class="nextSteps">
+
+                <h1 class="Header">Next Steps</h1>
+
+                <div class="nextSteps">
+
+                    <li id="lineOne">You have $2,466.67 avaliable for monthly investing, saving, and spending!</li>
+                    <li id="lineTwo">First, build a small emergeny fund we recommend $1750 to cover 1 month of utlities</li>
+                    <li id="lineThree">Second, if your employer offers a RRSP, contribute the amount needed to get the full match</li>
+                    <li id="lineFour">Third, focus on paying off high interest debts</li>
+                    <li id="lineFive">Fourth, increase emergeny fund to 3-6 months</li>
+                    <li id="lineSix">Fifth, pay off moderate interest debts</li>             
+                    <li id="lineSix">Sixth, max out TFSA</li>           
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>
